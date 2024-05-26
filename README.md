@@ -10,6 +10,8 @@ Submission Beginner from Womenland Summer 2024
   - Speaker section: Light Blue
   - Contact section: Deep Orange
 - Improved HTML structure for better accessibility and SEO:
+  - Added property image and shortcut icon on head
+  - Added description on head
   - Added descriptive alt text for images
   - Used semantic HTML tags and header elements
   - Included lazy loading for images to enhance performance
