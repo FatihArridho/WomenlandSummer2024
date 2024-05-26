@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* CSS Variables for common values */
+:root {
+    --font-family: 'Playfair Display', serif;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-green: green;
+    --color-blueviolet: blueviolet;
+    --color-home-bg: #ffeb3b; /* Yellow */
+    --color-about-bg: #8bc34a; /* Light Green */
+    --color-speaker-bg: #03a9f4; /* Light Blue */
+    --color-contact-bg: #ff5722; /* Deep Orange */
+    --font-size-small: 14px;
+    --font-size-large: 100px;
+    --font-size-medium: 32px;
+    --font-size-normal: 18px;
+    --padding-section: 20px;
+    --margin-section: 20px;
+    --border-radius: 10px;
+}
+
+/* Apply box-sizing to all elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
+
+header {
+    font-size: var(--font-size-small);
+    background-color: var(--color-white);
+    padding: 20px 50px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-black);
+}
+
+header img {
+    height: 40px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--color-black);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--color-green);
+}
+
+section {
+    padding: var(--padding-section);
+    margin: 0 var(--margin-section);
+    border-radius: var(--border-radius);
+}
+
+/* Background colors for different sections */
+.home-section {
+    background-color: var(--color-home-bg);
+}
+
+.about-section {
+    background-color: var(--color-about-bg);
+}
+
+.speaker-section {
+    background-color: var(--color-speaker-bg);
+}
+
+.contact-section {
+    background-color: var(--color-contact-bg);
+}
+
+.title {
+    font-size: var(--font-size-large);
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+}
+
+section img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin-top: 20px;
+}
+
+.description {
+    font-size: var(--font-size-medium);
+    width: 100%;
+    line-height: 1.5;
+}
+
+.date {
+    padding: 15px 20px;
+    width: fit-content;
+    font-size: 16px;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    border-radius: 40px;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, rgba(255, 215, 0, 0), var(--color-black), rgba(255, 215, 0, 0));
+    margin: 40px 0;
+}
+
+#speaker h2 {
+    text-align: center;
+}
+
+.speakers {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.speaker-box {
+    text-align: center;
+}
+
+.speaker-box img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+}
+
+.speaker-name {
+    padding: 10px;
+    font-size: var(--font-size-normal);
+    font-weight: bold;
+}
+
+.speaker-title {
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.contact-section .title2 {
+    font-size: 64px;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-register {
+    display: inline-block;
+    padding: 15px 20px;
+    margin-top: 15px;
+    color: var(--color-white);
+    background-color: var(--color-blueviolet);
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: 40px;
+    bottom: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .description {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .contact-section .title2 {
+        font-size: 40px;
+    }
+}
